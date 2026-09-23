@@ -1,0 +1,126 @@
+/* ----------- Estilos propios de INICIO.HTML ----------- */
+:root {
+   --padding-global: 60px 150px;
+}
+
+/* Comunes */
+/* .seccion {
+   padding: var(--padding-global);
+} */
+
+/* ---- Sección saludo ---- */
+.saludo-inicio {
+   height: 80vh;
+   width: 100%;
+   background-image: url(../img/img-inicio.jpg);
+   background-size: cover;
+   background-position: center;
+   display: flex;
+   align-items: end;
+   position: relative;
+
+   padding: 100px;
+}
+
+.saludo-inicio::before {
+   content: '';
+   position: absolute;
+   inset: 0;
+   background-color: #4b4945;
+   /* height: 500px; */
+   opacity: 0.7;
+   z-index: 0;
+}
+
+.saludo-inicio__texto * {
+   position: relative;
+   color: white;
+   z-index: 1;
+}
+
+/* ---- Sección ¿Qué somos? ---- */
+.texto-somos {
+   margin: 10px 15%;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
+
+@media (max-width: 991px) {
+   .texto-somos {
+      margin: 0px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+   }
+}
+
+/* ---- Sección Nuestra Trayectoria ---- */
+.trayectoria {
+   display: flex;
+   justify-content: space-between;
+   gap: 20px;
+   background-color: var(--color-primario-100);
+}
+
+@media (max-width: 991px) {
+   .trayectoria {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 25px;
+   }
+}
+
+/* Tables */
+/* @media (max-width: 991px) {
+    body {
+        font-size: 16px;
+    }
+}
+/* Móviles
+@media (max-width: 576px) {
+    body {
+        font-size: 14px;
+    }
+} */
+
+.trayectoria__texto {
+   width: 45%;
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
+
+@media (max-width: 991px) {
+   .trayectoria__texto {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+   }
+}
+
+.trayectoria__img {
+   width: 45%;
+   aspect-ratio: 1;
+   margin: auto;
+   display: flex;
+   justify-content: center;
+}
+
+@media (max-width: 991px) {
+   .trayectoria__img {
+      width: 100%;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+   }
+}
+
+.trayectoria__img img {
+   width: 100%;
+   object-fit: contain;
+   border-radius: 15px;
+}

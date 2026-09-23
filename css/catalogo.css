@@ -1,0 +1,88 @@
+/* Estilos específicos de la Página de 'Catálogo' */
+
+.catalogo {
+   padding-top: 40px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+/* Tables */
+@media (max-width: 991px) {
+   .catalogo {
+      padding-top: 20px;
+   }
+}
+/* Móviles */
+@media (max-width: 576px) {
+   .catalogo {
+      padding-top: 15px;
+   }
+}
+
+.contenedor__h1 {
+   margin: 60px 0px;
+   font-size: 3.5rem;
+}
+
+.barra-busqueda {
+   width: 90%;
+}
+.barra-busqueda input {
+   width: 100%;
+   padding: 8px 30px 8px 15px;
+   border-style: solid;
+   border-radius: 15px;
+   font-family: var(--fuente-principal);
+}
+
+/* --- Tarjetas de Producto (cards) ------------------------ */
+.contenedor-cards {
+   margin: 5% 0px;
+   width: 100%;
+   display: flex;
+   justify-content: space-around;
+   flex-wrap: wrap;
+}
+
+.card {
+   border: 1px solid;
+   border-radius: 15px;
+   width: 250px;
+   height: 350px;
+
+   margin: 0px 15px 30px 15px;
+}
+/* Tables */
+@media (max-width: 991px) {
+   .card {
+      margin: 15px;
+      /* size-adjust: ; */
+   }
+}
+/* Móviles */
+@media (max-width: 576px) {
+   .card {
+      margin: 15px;
+   }
+}
+
+.card__img {
+   border-top-left-radius: 15px;
+   border-top-right-radius: 15px;
+   height: 70%;
+   overflow: hidden;
+}
+.card__img img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+.card__cuerpo {
+   height: 30%;
+   font-size: 14px;
+   padding: 12px 15px;
+   display: flex;
+   flex-direction: column;
+   gap: 4px;
+}

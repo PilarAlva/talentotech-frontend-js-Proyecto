@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+:root {
+   --color-primario-100: #d5c8bc;
+   --color-primario-500: #6f5b46;
+   --color-fuente-700: #4a3d2f;
+   --color-fuente-800: #382e23;
+   --btn-color: #8b9776;
+   --btn-color-dark: #6c765a;
+   /* --color-gris: #d9d8d6; */
+   --color-neutro-500: #d9d8d6;
+   --color-neutro-300: #e6e5e4;
+
+   --fuente-principal: 'Poppins', arial;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+html {
+   font-size: 62.5%;
+   /* Por default el tamaño de fuente es 16px. Esto lo convierte en una base de 10px */
+}
+
+body {
+   background-color: #f2f2f1;
+   font-family: var(--fuente-principal);
+
+   min-height: 100vh;
+   display: grid;
+   grid-template-rows: auto 1fr auto; /* header / contenido / footer */
+
+   font-size: 1.8rem; /* 18px */
+}
+/* Desktop - Nuestro enfoque es Dekstopfirst, por lo que el body de arriba rige los tamaños /* 
+@media (min-width: 1200px) {
+   body {
+      font-size: 1.8rem; /* 18px
+   }
+} */
+
+/* Tables */
+@media (max-width: 991px) {
+   body {
+      font-size: 1.6rem; /* 16px */
+   }
+}
+
+/* Móviles */
+@media (max-width: 576px) {
+   body {
+      font-size: 1.4rem; /* 14px */
+   }
+}
+
+:is(h1, h2, h3, h4, h5, h6, p) {
+   color: var(--color-fuente-800);
+}
+
+h1 {
+   font-size: 4.78rem; /* 47.8px */
+}
+/* Tables */
+@media (max-width: 991px) {
+   h1 {
+      font-size: 3.98rem; /* 39.8px */
+   }
+}
+/* Móviles */
+@media (max-width: 576px) {
+   h1 {
+      font-size: 3.32rem; /* 33.2px */
+   }
+}
+
+:is(h2, h3, h4, h5, h6) {
+   font-weight: 400;
+}
+
+h2 {
+   font-size: 2.76rem; /* 27.6px */
+}
+
+a {
+   text-decoration: none;
+   color: inherit;
+}
+
+li {
+   list-style: none;
+}
+
+/* ------------ Estilos en Común --------------- */
+.contenedor {
+   width: 100%;
+   padding: 60px 180px;
+}
+/* Tables */
+@media (max-width: 991px) {
+   .contenedor {
+      padding: 50px 140px;
+   }
+}
+/* Móviles */
+@media (max-width: 576px) {
+   .contenedor {
+      padding: 40px 80px;
+   }
+}
+
+/* ----- Botones ------ */
+button {
+   border-style: solid;
+   border-width: 1px;
+   border-radius: 8px;
+   padding: 7px 30px;
+   font-family: var(--fuente-principal);
+   background-color: transparent;
+   cursor: pointer;
+}
+.btn-verde {
+   background-color: var(--btn-color);
+   border: none;
+   color: white;
+}
+.btn-verde:hover {
+   background-color: var(--btn-color-dark);
+   border: none;
+   color: var(--color-neutro-500);
+}
+
+.btn-neutro {
+   background-color: transparent;
+   border-color: var(--color-fuente-700);
+   color: var(--color-fuente-700);
+}
+.btn-neutro:hover {
+   background-color: var(--color-neutro-500);
+}
+
+/* ------------- Barra de Navegación Principal (Header-nav) ------------- */
+header {
+   z-index: 999;
+   position: sticky;
+   top: 0;
+   width: 100%;
+   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+.nav {
+   display: flex;
+   justify-content: space-between;
+
+   background-color: var(--color-primario-100);
+}
+
+.nav__logo {
+   margin: 10px 25px;
+}
+
+.nav__opciones {
+   margin: 0 20px 0 20px;
+
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+}
+
+.nav__opciones li {
+   margin: 0 20px 0 20px;
+   color: var(--color-fuente-700);
+}
+
+/* ---- Footer ----------------------------------------- */
+footer {
+   background-color: var(--color-primario-100);
+   padding: 30px 50px 0px;
+   font-size: 12px;
+}
+/* Tables */
+@media (max-width: 991px) {
+   footer {
+      padding: 15px 40px;
+      font-size: 10px;
+   }
+}
+/* Móviles */
+@media (max-width: 576px) {
+   footer {
+      padding: 10px 30px;
+      font-size: 8px;
+   }
+}
+
+footer p {
+   color: var(--color-primario-500);
+}
+
+footer hr {
+   border-bottom: 0;
+   background-color: var(--color-primario-500);
+}
+
+.footer__contenedor {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding-bottom: 15px;
+}
+@media (max-width: 991px) {
+   .footer__contenedor {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 15px;
+   }
+}
+
+.footer__contenedor--logo {
+   width: 20%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+   padding: 10px;
+}
+@media (max-width: 991px) {
+   .footer__contenedor--logo {
+      width: 90%;
+   }
+}
+
+.footer__contenedor--logo img {
+   width: 45%;
+}
+@media (max-width: 991px) {
+   .footer__contenedor--logo img {
+      width: 20%;
+   }
+}
+
+.footer__contenedor-nav-redes {
+   display: flex;
+   justify-content: space-between;
+   gap: 50px;
+   width: 80%;
+   padding-left: 20px;
+}
+@media (max-width: 991px) {
+   .footer__contenedor-nav-redes {
+      width: 100%;
+      padding-left: 0px;
+   }
+}
+
+.footer__contenedor--nav,
+.footer__contenedor--nav-opciones {
+   color: var(--color-primario-500);
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   width: 45%;
+}
+
+.footer__contenedor--redes {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   width: 45%;
+   color: var(--color-primario-500);
+}
+
+.footer__contenedor--redes--link {
+   display: flex;
+   align-items: center;
+}
+
+.footer__legales {
+   padding: 20px;
+}

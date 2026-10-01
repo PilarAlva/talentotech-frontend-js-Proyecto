@@ -10,7 +10,7 @@
 
 /* ---- Sección saludo ---- */
 .saludo-inicio {
-   height: 80vh;
+   height: 85vh;
    width: 100%;
    background-image: url(../img/img-inicio.jpg);
    background-size: cover;
@@ -39,6 +39,10 @@
 }
 
 /* ---- Sección ¿Qué somos? ---- */
+.somos {
+   background-color: var(--color-primario-100);
+}
+
 .texto-somos {
    margin: 10px 15%;
    text-align: center;

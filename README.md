@@ -6,7 +6,7 @@ Proyecto Final desarrollado para el Curso Front-End JS de Talento Tech, de la Ag
 El proyecto utiliza HTML5, CSS3 Y JavaScript vanilla.
 
 ---
-## Requisitos de entrega del Proyecto Práctico.
+## Requisitos de pre-entrega del Proyecto Práctico.
 - Una pagina index.html, como pagina principal, con los productos de la tienda.
 - Una pagina contacto, dentro de la carpeta "pages" con un formulario de contacto (pueden utilizar el de "formspree").
 - Carpeta css con el archivo styles.css.
